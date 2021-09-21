@@ -1,0 +1,3 @@
+//makefile
+exp1:count.h main.c count.c
+    gcc -o exp1 main.c count.c//此行以tab键开头
