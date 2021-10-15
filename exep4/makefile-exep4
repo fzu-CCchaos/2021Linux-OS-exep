@@ -1,0 +1,6 @@
+FLAG=`pkg-config --libs --cflags gtk+-2.0`
+all:client server
+client: client.c head.h
+	gcc client.c -o client $(FLAG)
+server: server.c head.h
+	gcc server.c -o server $(FLAG)
